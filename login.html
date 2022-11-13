@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+    <script src="main.js"></script>
+
   </head>
   <body>
     <header id="header-login">
@@ -19,9 +24,19 @@
         <div id="box">
             <div class="photo"></div>
             <input type="text" placeholder="Usuário">
-            <input type="text" placeholder="Senha">
+            <input type="password" placeholder="Senha">
             <button type="submit">ACESSAR</button>
+
+            <div id="buttonDiv" style="margin: 10px;"></div>
+
+              <p id="fullName"></p>
+              <p id="sub"></p>
+              <p id="given_name"></p>
+              <p id="family_name"></p>
+              <p id="email"></p>
+              <p id="verifiedEmail"></p>
+              <img id="picture" />
+            </div>
         </div>
-    </div>
   </body>
 </html>
