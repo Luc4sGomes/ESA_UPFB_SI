@@ -1,3 +1,4 @@
+
 /*Global ========================= */
 :root {
   --dark-blue: #363f5f;
@@ -122,17 +123,15 @@ button:hover{
 
 /* Header ==================*/
 
-header {
+#header-index {
   background-color: green;
   padding: 2rem 0 10rem;
   text-align: center;
 }
 
-.logo {
+#logo {
   color: #fff;
-  font-weight: 100px;
-  font-size: 24px;
-  
+  font-weight: 100;
 }
 
 /* Balance ==================*/
@@ -315,4 +314,51 @@ input{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
+}
+
+
+/* LOGIN PAGE */ 
+
+#header-login{
+  height: 117px;
+  background-color: #33CC95;
+  text-align: center;
+}
+
+.container-login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 440px;
+}
+
+#box input{
+  border-radius: 7px;
+  width: 250px;
+  margin:10px;
+}
+
+#box button{
+  width: 250px;
+  height: 42px;
+  background-color: #24A140;
+  font-weight: bold;
+}
+
+.photo{
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+  border-radius: 200px;
+  margin:20px 0;
 }
