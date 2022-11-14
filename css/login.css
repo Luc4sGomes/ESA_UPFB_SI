@@ -7,6 +7,7 @@
 
 body{
   background-color: rgb(207, 202, 202);
+  font-family: 'Poppins', sans-serif;
 }
 /* LOGIN PAGE */ 
 
@@ -55,6 +56,18 @@ body{
   width: 200px;
   height: 200px;
   background-color: gray;
-  border-radius: 200px;
-  margin:20px 0;
+  border-radius: 180px;
+  margin: 0;
+}
+
+.keep-logo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.keep-logo h2 {
+  color: white;
+  font-size: 24px;
 }
