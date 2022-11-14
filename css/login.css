@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0 none;
+}
+
+body{
+  background-color: rgb(207, 202, 202);
+}
 /* LOGIN PAGE */ 
 
 #header-login{
@@ -26,7 +36,9 @@
 #box input{
   border-radius: 7px;
   width: 250px;
+  height: 42px;
   margin:10px;
+  padding: 10px;
 }
 
 #box button{
@@ -34,6 +46,9 @@
   height: 42px;
   background-color: #24A140;
   font-weight: bold;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
 }
 
 .photo{
