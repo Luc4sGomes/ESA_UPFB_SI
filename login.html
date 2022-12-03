@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Finanças</title>
-    <link rel="stylesheet" href="./css/login.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
 
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
-    <script src="./js/main.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Finanças</title>
+  <link rel="stylesheet" href="./css/login.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&display=swap"
+    rel="stylesheet" />
+</head>
 
-  </head>
-  <body>
-    <header id="header-login">
-      <div class="keep-logo">
-        <h2>Finance.Me</h2>
-      </div>
-    </header>
-    <div class="container-login">
-        <div id="box">
-            <div class="photo"></div>
-            <input type="text" placeholder="Usuário">
-            <input type="password" placeholder="Senha">
-            <button type="submit">ACESSAR</button>
+<body>
 
-            <div id="buttonDiv" style="margin: 10px;"></div>
+  <main class="container" id="login">
 
-              <p id="fullName"></p>
-              <p id="sub"></p>
-              <p id="given_name"></p>
-              <p id="family_name"></p>
-              <p id="email"></p>
-              <p id="verifiedEmail"></p>
-              <img id="picture" />
-            </div>
+    <h1 id="logo-of">Finance.me $<i class="fa-regular fa-money-bill-1-wave"></i></h1>
+
+    <h2 class="title" id="displayName">Não autenticado</h3>
+      <br />
+      <form>
+        <div class="input-field ">
+          <label for="emailInput"></label>
+          <input type="email" class="form-control" id="emailInput" placeholder="Enter Your Username" />
+          <div class="underline"></div>
         </div>
-  </body>
+        <div class="input-field ">
+          <label for="emailInput"></label>
+          <input type="password" class="form-control" id="passwordInput" placeholder="Enter Your Password" />
+          <div class="underline"></div>
+        </div>
+      </form>
+
+      <button class="btn btn-lg btn-block btn-primary but" id="authEmailPassButton">
+        Autenticar
+      </button>
+      <button class="btn btn-lg btn-block btn-info but" id="createUserButton">
+        Criar nova conta
+      </button>
+      <br />
+      <button class="btn btn-lg btn-block btn-secondary but google" id="logOutButton">
+        <a class="sair " href="index.html">Sair</a>
+      </button>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-firestore.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/authentication.js"></script>
+</body>
+
 </html>

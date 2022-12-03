@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,59 +7,35 @@
   border: 0 none;
 }
 
-body{
-  background-color: rgb(207, 202, 202);
-  font-family: 'Poppins', sans-serif;
+html {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
 }
-/* LOGIN PAGE */ 
 
-#header-login{
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100vw;
+  background: linear-gradient(45deg, #5aff15, #00b712);
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* LOGIN PAGE */
+
+#logo-of {
+  margin-bottom: 74px;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+#header-login {
   height: 117px;
-  background-color: #33CC95;
+  background-color: #33cc95;
   text-align: center;
-}
-
-.container-login{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-#box{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 440px;
-  height: 440px;
-}
-
-#box input{
-  border-radius: 7px;
-  width: 250px;
-  height: 42px;
-  margin:10px;
-  padding: 10px;
-}
-
-#box button{
-  width: 250px;
-  height: 42px;
-  background-color: #24A140;
-  font-weight: bold;
-  color: white;
-  font-weight: bold;
-  border-radius: 7px;
-}
-
-.photo{
-  width: 200px;
-  height: 200px;
-  background-color: gray;
-  border-radius: 180px;
-  margin: 0;
 }
 
 .keep-logo {
@@ -67,7 +45,131 @@ body{
   justify-content: center;
 }
 
-.keep-logo h2 {
+.container {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.input-field {
+  margin-top: 12px;
+}
+
+.btn {
+  margin-top: 12px;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main.container {
+  background: white;
+  min-width: 620px;
+  min-height: 60vh;
+  padding: 2rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+main h2 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  position: relative;
+}
+
+form .input-field:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.input-field .underline::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(45deg, #69b99d, #ccf4e6);
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+  transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+  transform: scaleX(1);
+}
+
+.input-field input {
+  outline: none;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+
+.input-field input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.but {
+  margin-top: 2rem;
+  padding: 0.4rem;
+  width: 50%;
+  background: linear-gradient(to left, #5aff15, #00b712);
+  cursor: pointer;
   color: white;
-  font-size: 24px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.google {
+  margin-top: 2rem;
+  padding: 0.4rem;
+  width: 50%;
+  background: linear-gradient(to left, #69b99d, #69b99d);
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  letter-spacing: 0.5px;
+  background: linear-gradient(to left, #69b99d, #ccf4e6);
+}
+
+.google {
+  background: linear-gradient(to right, #0f241d, #0f241d);
+}
+.sair {
+  color: white;
+  text-decoration: none;
 }
